@@ -61,7 +61,7 @@
                     </li>
                 </ul>
                 <ul class="hidden md:flex space-x-12 font-semibold">
-                    <li><a href="">Connexion test</a></li>
+                    <li><a href="">Connexion testok</a></li>
                     <li>
                         <a href="" class="flex items-center group text-indigo-700">
                             Inscription
