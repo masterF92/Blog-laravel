@@ -26,9 +26,9 @@ Route::get('/{post}', [PostController::class, 'show'])->name('posts.show');
 //     return view('welcome');
 // });
 
-Route::get('/bonjour', function () {
-    return 'Hello world';
-});
+// Route::get('/bonjour', function () {
+//     return 'Hello world';
+// });
 
 // Route::get('/personne', function () {
 //     return [
