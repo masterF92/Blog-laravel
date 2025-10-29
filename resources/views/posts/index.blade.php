@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ config('app.name') }}</title>
+    <title>{{ config('app.name') }} | ok</title>
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
@@ -61,7 +61,7 @@
                     </li>
                 </ul>
                 <ul class="hidden md:flex space-x-12 font-semibold">
-                    <li><a href="">Connexion</a></li>
+                    <li><a href="">Connexion test</a></li>
                     <li>
                         <a href="" class="flex items-center group text-indigo-700">
                             Inscription
@@ -80,6 +80,7 @@
                 @foreach ($posts as $post)
                 {{-- Début du post --}}
                     
+
                
                 {{-- Début du post --}}
                 <article class="flex flex-col lg:flex-row pb-10 md:pb-16 border-b">
