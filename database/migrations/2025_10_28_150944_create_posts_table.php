@@ -11,14 +11,14 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('posts', function (Blueprint $table) {
-            $table->id();
-            $table->string('title');
-            $table->string('slug')->unique();
-            $table->string('excerpt');
-            $table->text('content');
-            $table->string('thumbnail');
-            $table->timestamps();
+        Schema::create('posts', function (Blueprint $table) { // créer la table posts
+            $table->id(); // Clé primaire
+            $table->string('title'); // Titre du post
+            $table->string('slug')->unique(); // Slug unique pour chaque post
+            $table->string('excerpt'); // Extrait du post
+            $table->text('content'); // Contenu principal du post
+            $table->string('thumbnail'); // URL de l'image miniature
+            $table->timestamps(); // Champs created_at et updated_at
         });
     }
 
@@ -27,6 +27,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('posts');
+        Schema::dropIfExists('posts'); // supprimer la table posts
     }
 };

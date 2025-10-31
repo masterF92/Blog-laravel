@@ -10,7 +10,7 @@ use Illuminate\Support\Str;
  */
 class PostFactory extends Factory
 {
-    private function getRandomImage(): string
+    private function getRandomImage(): string // obtenir une image aléatoire
     {
         $imageId = fake()->numberBetween(1, 1000);
 
@@ -22,7 +22,7 @@ class PostFactory extends Factory
      *
      * @return array<string, mixed>
      */
-    public function definition(): array
+    public function definition(): array 
     {
         $title = fake()->unique()->sentence();
         $content = fake()->paragraphs(asText: true);
